@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Continuous Apology for Shakirah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffd6cc; /* light peach background color */
+            padding-top: 50px;
+        }
+
+        #apology {
+            font-size: 36px;
+            margin-bottom: 20px;
+            position: relative;
+            animation: floatApology 3s ease-in-out infinite;
+            color: #800000; /* dark red text color */
+        }
+
+        @keyframes floatApology {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .sticker {
+            width: 150px;
+            height: auto;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="apology">I AM DEEPLY SORRY, SHAKIRAH</div>
+    <div class="stickers">
+        <img src="D:\Hacker's Environment\Sorry Shakirah\sorry.png" alt="Remorse Sticker 1" class="sticker">
+    </div>
+
+    <script>
+        // Function to continuously display the apology
+        function displayApology() {
+            var apologyDiv = document.getElementById("apology");
+            apologyDiv.innerHTML = "I AM DEEPLY SORRY, SHAKIRAH";
+        }
+
+        // Call the function initially
+        displayApology();
+
+        // Continuously call the function using setInterval
+        setInterval(displayApology, 3000); // Change 3000 to adjust the speed (milliseconds)
+    </script>
+</body>
+</html>
